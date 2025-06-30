@@ -3,7 +3,7 @@
     "name": "zomato",
     "slug": "zomato",
     "version": "1.0.0",
-
+    "scheme":"zomato",
     "web": {
       "favicon": "./assets/favicon.png"
     },
@@ -12,7 +12,15 @@
       "tsconfigPaths": true
     },
 
-    "plugins": [],
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to update your profile picture.",
+          "cameraPermission": "The app accesses your camera to take profile pictures."
+        }
+      ]
+    ],
 
     "orientation": "portrait",
     "icon": "./assets/icon.png",
